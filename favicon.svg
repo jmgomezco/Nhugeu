@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1070)"><rect width="1000" height="1000" fill="#f5f5f5"></rect><g transform="matrix(28.125,0,0,28.125,50,50)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Fondo transparente -->
+  <rect width="32" height="32" fill="transparent"></rect>
+  
+  <!-- Tronco del árbol -->
+  <path d="M14 20 Q15 18 16 16 Q17 18 18 20 L18 28 L14 28 Z" fill="#8B4513" stroke="#654321" stroke-width="0.5"></path>
+  
+  <!-- Ramas principales -->
+  <path d="M16 16 Q12 14 10 12" stroke="#654321" stroke-width="1.5" fill="none"></path>
+  <path d="M16 16 Q20 14 22 12" stroke="#654321" stroke-width="1.5" fill="none"></path>
+  <path d="M16 16 Q14 12 12 8" stroke="#654321" stroke-width="1.2" fill="none"></path>
+  <path d="M16 16 Q18 12 20 8" stroke="#654321" stroke-width="1.2" fill="none"></path>
+  <path d="M16 16 Q16 10 16 6" stroke="#654321" stroke-width="1.2" fill="none"></path>
+  
+  <!-- Hojas/flores amarillas -->
+  <circle cx="10" cy="12" r="3" fill="#FFD700" opacity="0.8"></circle>
+  <circle cx="22" cy="12" r="3" fill="#FFA500" opacity="0.8"></circle>
+  <circle cx="12" cy="8" r="2.5" fill="#FFD700" opacity="0.8"></circle>
+  <circle cx="20" cy="8" r="2.5" fill="#FFA500" opacity="0.8"></circle>
+  <circle cx="16" cy="6" r="2.8" fill="#FFD700" opacity="0.8"></circle>
+  
+  <!-- Pequeños detalles de hojas -->
+  <circle cx="8" cy="14" r="1.5" fill="#FFB347" opacity="0.7"></circle>
+  <circle cx="24" cy="14" r="1.5" fill="#FFB347" opacity="0.7"></circle>
+  <circle cx="14" cy="10" r="1.8" fill="#FFA500" opacity="0.7"></circle>
+  <circle cx="18" cy="10" r="1.8" fill="#FFD700" opacity="0.7"></circle>
+</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1070"><rect width="1000" height="1000" x="0" y="0" rx="450" ry="450"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(31.25,0,0,31.25,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Fondo transparente -->
+  <rect width="32" height="32" fill="transparent"></rect>
+  
+  <!-- Tronco del árbol -->
+  <path d="M14 20 Q15 18 16 16 Q17 18 18 20 L18 28 L14 28 Z" fill="#8B4513" stroke="#654321" stroke-width="0.5"></path>
+  
+  <!-- Ramas principales -->
+  <path d="M16 16 Q12 14 10 12" stroke="#654321" stroke-width="1.5" fill="none"></path>
+  <path d="M16 16 Q20 14 22 12" stroke="#654321" stroke-width="1.5" fill="none"></path>
+  <path d="M16 16 Q14 12 12 8" stroke="#654321" stroke-width="1.2" fill="none"></path>
+  <path d="M16 16 Q18 12 20 8" stroke="#654321" stroke-width="1.2" fill="none"></path>
+  <path d="M16 16 Q16 10 16 6" stroke="#654321" stroke-width="1.2" fill="none"></path>
+  
+  <!-- Hojas/flores amarillas -->
+  <circle cx="10" cy="12" r="3" fill="#FFD700" opacity="0.8"></circle>
+  <circle cx="22" cy="12" r="3" fill="#FFA500" opacity="0.8"></circle>
+  <circle cx="12" cy="8" r="2.5" fill="#FFD700" opacity="0.8"></circle>
+  <circle cx="20" cy="8" r="2.5" fill="#FFA500" opacity="0.8"></circle>
+  <circle cx="16" cy="6" r="2.8" fill="#FFD700" opacity="0.8"></circle>
+  
+  <!-- Pequeños detalles de hojas -->
+  <circle cx="8" cy="14" r="1.5" fill="#FFB347" opacity="0.7"></circle>
+  <circle cx="24" cy="14" r="1.5" fill="#FFB347" opacity="0.7"></circle>
+  <circle cx="14" cy="10" r="1.8" fill="#FFA500" opacity="0.7"></circle>
+  <circle cx="18" cy="10" r="1.8" fill="#FFD700" opacity="0.7"></circle>
+</svg></svg></g></g></svg></g></svg>
