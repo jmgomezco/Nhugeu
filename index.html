@@ -12,7 +12,6 @@
     const scopes = 'email+openid+profile';
 
     // Redirige automáticamente al login Cognito
-    window.location.href = `${cognitoDomain}/login?client_id=${clientId}&response_type=${responseType}&scope=${scopes}&redirect_uri=${encodeURIComponent(redirectUri)}`;
   </script>
 </head>
 <body>
