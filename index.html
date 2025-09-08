@@ -1,46 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>Sig-in</title>
-    <!-- Google Fonts - Bubblegum Sans solo para el título -->
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <!-- Google Fonts - Fredoka: moderna, legible y sin errores de glifos -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Redirección a login Cognito</title>
+  <script>
+    // Configura aquí tu dominio Cognito Hosted UI y el callback
+    const cognitoDomain = 'https://nhug-ai.auth.eu-west-1.amazoncognito.com'; // o tu dominio personalizado
+    const clientId = '1kivi6aito010vvka2on20lqo';
+    const redirectUri = 'https://nhug.eu/index.html'; // a donde volver tras login
+    const responseType = 'code'; // o 'token' si prefieres
+
+    // Si quieres redirigir siempre, sin chequear sesión
+    window.location.href = `${cognitoDomain}/login?client_id=${clientId}&response_type=${responseType}&redirect_uri=${encodeURIComponent(redirectUri)}`;
+  </script>
 </head>
 <body>
-    <div class="content-container">
-        <div class="title-section">
-            <h1><span class="nhug">Nhug</span><span class="ai">Ai</span></h1>
-        </div>
-    <script src="main.js"></script>
-    <script>
-    // Inhabilita scroll por teclado
-    window.addEventListener('keydown', function(e) {
-      const keys = [
-        'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
-        'PageUp', 'PageDown', 'Home', 'End', ' ',
-      ];
-      if (keys.includes(e.key)) {
-        e.preventDefault();
-      }
-    }, { passive: false });
-
-    // Inhabilita scroll por rueda de ratón y gestos táctiles
-    window.addEventListener('wheel', function(e) {
-      e.preventDefault();
-    }, { passive: false });
-
-    window.addEventListener('touchmove', function(e) {
-      e.preventDefault();
-    }, { passive: false });
-    </script>
+  <p>Redirigiendo al login...</p>
 </body>
 </html>
