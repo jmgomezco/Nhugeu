@@ -33,5 +33,26 @@
         </div>
     </div>
     <script src="main.js"></script>
+    <script>
+    // Inhabilita scroll por teclado
+    window.addEventListener('keydown', function(e) {
+      const keys = [
+        'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+        'PageUp', 'PageDown', 'Home', 'End', ' ',
+      ];
+      if (keys.includes(e.key)) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    // Inhabilita scroll por rueda de ratón y gestos táctiles
+    window.addEventListener('wheel', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+    </script>
 </body>
 </html>
