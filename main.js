@@ -41,5 +41,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendEmail() {
-    window.location.href = "mailto:juan@nhug.ai";
+    window.location.href = "mailto:nhugai@nhug.ai";
 }
