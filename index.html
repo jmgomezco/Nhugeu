@@ -4,17 +4,26 @@
   <meta charset="UTF-8">
   <title>Redirección a login Cognito</title>
   <script>
-    // Configura aquí tu dominio Cognito Hosted UI y el callback
-    const cognitoDomain = 'https://nhug-ai.auth.eu-west-1.amazoncognito.com'; // o tu dominio personalizado
+    // Datos REALES Cognito Hosted UI y Amplify
+    const cognitoDomain = 'https://nhug-ai.auth.eu-west-1.amazoncognito.com';
     const clientId = '1kivi6aito010vvka2on20lqo';
-    const redirectUri = 'https://nhug.eu/index.html'; // a donde volver tras login
-    const responseType = 'code'; // o 'token' si prefieres
+    const redirectUri = 'https://d2hn7j2bqlnsvw.amplifyapp.com/';
+    const responseType = 'code'; // Authorization Code Flow recomendado
+    const scopes = 'email+openid+profile';
 
-    // Si quieres redirigir siempre, sin chequear sesión
-    window.location.href = `${cognitoDomain}/login?client_id=${clientId}&response_type=${responseType}&redirect_uri=${encodeURIComponent(redirectUri)}`;
+    // Redirige automáticamente al login Cognito
+    window.location.href = `${cognitoDomain}/login?client_id=${clientId}&response_type=${responseType}&scope=${scopes}&redirect_uri=${encodeURIComponent(redirectUri)}`;
   </script>
 </head>
 <body>
-  <p>Redirigiendo al login...</p>
+  <p>Redirigiendo al login seguro de Cognito...</p>
+  <noscript>
+    <p>
+      Para iniciar sesión, haz clic aquí:<br>
+      <a href="https://nhug-ai.auth.eu-west-1.amazoncognito.com/login?client_id=1kivi6aito010vvka2on20lqo&response_type=code&scope=email+openid+profile&redirect_uri=https://d2hn7j2bqlnsvw.amplifyapp.com/">Ir al login de Cognito</a>
+    </p>
+  </noscript>
+  <hr>
+  <button onclick="window.location.href='mailto:juan@nhug.ai'">Contactar por email</button>
 </body>
 </html>
