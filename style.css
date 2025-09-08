@@ -24,7 +24,7 @@ body {
     width: 100%;
     max-width: 800px;
     min-height: 100vh;
-    gap: clamp(10px, 1.5vh, 30px); /* Puedes cambiar el valor aquí */
+    gap: clamp(30px, 1.5vh, 30px); /* Puedes cambiar el valor aquí */
 }
 
 title-section {
@@ -32,7 +32,7 @@ title-section {
     width: 100%;
     text-align: center;
     margin-top: clamp(5px, 1.5vh, 65px);
-    gap: clamp(5px, 1vh, 15px);
+    gap: clamp(30px, 1vh, 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,13 +92,6 @@ h1 {
     width: 100%;
 }
 
-.image-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(10px, 2vh, 25px); /* Ajusta el gap entre imágenes o elementos aquí */
-    width: 100%;
-}
 
 .email-button {
     background-color: #6495ED;
