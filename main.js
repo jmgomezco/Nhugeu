@@ -28,7 +28,3 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
     }, { passive: false });
 });
-
-function sendEmail() {
-    window.location.href = "mailto:juan@nhug.ai";
-}
