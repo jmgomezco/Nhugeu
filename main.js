@@ -1,14 +1,3 @@
-// Cognito Hosted UI redirection with audience (Client ID)
-const cognitoDomain = 'https://nhug-ai.auth.eu-west-1.amazoncognito.com';
-const clientId = '1kivi6aito010vvka2on20lqo'; // Audiencia (Client ID)
-const redirectUri = 'https://nhug.eu/index.html'; // Donde vuelve tras login
-const responseType = 'code'; // Más seguro (Authorization Code Flow)
-
-// Si no hay token en la URL, redirige a Cognito Hosted UI
-if (!window.location.search.includes('code=')) {
-    window.location.href = `${cognitoDomain}/login?client_id=${clientId}&response_type=${responseType}&redirect_uri=${encodeURIComponent(redirectUri)}`;
-}
-
 // Bloquear scroll también por JavaScript por seguridad extra
 document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = 'hidden';
@@ -41,5 +30,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendEmail() {
-    window.location.href = "mailto:nhugai@nhug.ai";
+    window.location.href = "mailto:juan@nhug.ai";
 }
